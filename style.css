@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, #inputElement {
+    background-color: #02457a;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+    align-content: center;
+    border-radius: 25px 25px 0 0;
+}
+
+#inputWindow {
+    width: 75%;
+    height: 2em;
+}
+
+
+#citySearch {
+    width: 50%;
+}
+#enterbtn {
+    height: 2em;
+    width: 75%;
+    margin-top: .5em;
+    background-color: #74839b;
+}
+
+#celsius_or_fahrenheit {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 0;
+    width: 40%;
+
+}
+.fahrenheit_or_celsius {
+    color: white;
+    font-size: 1em;
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    padding: 0;
+}
+
+#dayTabs {
+    max-height: 1em;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.days {
+        /* object-fit: fill; */ 
+        width: 80%;
+        padding: 1rem;
+        text-align: center;
+        margin: 0px auto;
+        background-color: #d6e8ee;
+        
+
+}
+
+#welcomeMessage {
+
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 0 auto;
+    padding: 1em;
+    height: 6em;
+    text-align: center;
+    font-size: 15px;
+    border: solid 2px white;
+    
+}
+
+#titles {
+    display: none;
+    flex-direction: row;
+    margin: 1em auto;
+    padding-top: .5em;
+    width: 100%;
+    height: 5em;
+    justify-content: space-between;
+
+    
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+p {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 1em;
+}
+
+#container {
+    width: 90vw;
+    border-radius: 25px;
+    background-color: #018abe;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+
+#icon {
+    width: 7em;
+    margin: 0px auto;
+    height: auto;
+}
+
+#location {
+    padding: 1em;
+    vertical-align: middle; 
+    justify-self: center;
+    width: 40%;
+}
+
+#time {
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+    padding: 1em;
+}
+
+#temperature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15em;
+    padding: 1.5em;
+
+}
+#tempInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    width: 50%;
+
+}
+
+#temps {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding: 1em;
+
+}
+
+#avgTemp {
+    font-size: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#lowTemp {
+    font-size: 1em;
+    background-color: blue;
+    
+}
+
+#highTemp {
+    font-size: 1em;
+    background-color: red;
+}
+
+#hourly {
+    display: flex;
+    height: 8em;
+    width: 85%;
+    margin: 1em auto;
+    overflow-x: scroll;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #d6e8ee;
+    border-radius: 1em;
+}
+
+.hours {
+    min-width: 7em;
+
+    border: solid blue 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: .5em;
+}
+
+.time {
+    color: black;
+    font-size: 15px;
+    margin: 0px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+
+    #location {
+        justify-self: center;
+        flex-direction: row;
+        border: solid 2px blue;
+    }
+
+    #time {
+        width: 40%;
+        font-size: 1em;
+        padding: 1em;
+        border: solid 2px red;
+    }
+
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header id="inputElement">
+            <div id="citySearch">
+                <input type="text" id="inputWindow" placeholder="enter city here">
+                <button id="enterbtn" type="button" onclick="getData()"> ENTER </button>
+            </div>
+            <div id="celsius_or_fahrenheit">
+                <label class="fahrenheit_or_celsius">
+                    <input type="radio" id="celsius" name="celsius_or_fahrenheit" value="celsius" autocomplete="off" checked onclick="updateDisplay()">
+                    Celsius
+                </label>
+                <label class="fahrenheit_or_celsius">
+                    <input type="radio" id="fahrenheit" name="celsius_or_fahrenheit" value="fahrenheit" autocomplete="off">
+                    Fahrenheit
+                </label>
+            </div>
+        </header>
+        
+        <div id="dayTabs">
+            <button class="days" id="day0" onclick="updateDisplay(0)">
+            </button>
+
+            <button class="days" id="day1" onclick="updateDisplay(1)">
+            </button>
+            
+            <button class="days" id="day2" onclick="updateDisplay(2)">
+            </button>
+        </div>
+        
+        <div id="display">
+            <h1 id="welcomeMessage">Welcome To Noëlle's Weather Page</h1>
+            <div id="titles">
+                <div id="location">
+                    <h1 id="locationName"></h1>
+
+                </div>
+                
+                <div id="time">
+                    <p id="date"></p>
+                    <p id="alerts"></p>
+                </div>
+            </div>
+        
+            <div id="temperature">
+                <div id="tempInfo">
+                    <img id="icon" src="">
+                    <p id="condition"></p>
+                </div>
+                <div id="temps">
+                    <p id="lowTemp">Low</p>
+                    <p id="avgTemp">Avg</p>
+                    <p id="highTemp">High</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="hourly">
+            <div class="hours" id="00:00">
+                <p class="time">Midnight</p>
+            </div>
+            <div class="hours" id="01:00">
+                <p class="time">1 A.M.</p>
+            </div>
+            <div class="hours" id="02:00">
+                <p class="time">2 A.M.</p>
+            </div>
+            <div class="hours" id="03:00">
+                <p class="time">3 A.M.</p>
+            </div>
+            <div class="hours" id="04:00">
+                <p class="time">4 A.M.</p>
+            </div>
+            <div class="hours" id="05:00">
+                <p class="time">5 A.M.</p>
+            </div>
+            <div class="hours" id="06:00">
+                <p class="time">6 A.M.</p>
+            </div>
+            <div class="hours" id="07:00">
+                <p class="time">7 A.M.</p>
+            </div>
+            <div class="hours" id="08:00">
+                <p class="time">8 A.M.</p>
+            </div>
+            <div class="hours" id="09:00">
+                <p class="time">9 A.M.</p>
+            </div>
+            <div class="hours" id="10:00">
+                <p class="time">10 A.M.</p>
+            </div>
+            <div class="hours" id="11:00">
+                <p class="time">11:00 A.M.</p>
+            </div>
+            <div class="hours" id="12:00">
+                <p class="time">Noon</p>
+            </div>
+            <div class="hours" id="13:00">
+                <p class="time">1:00 P.M.</p>
+            </div>
+            <div class="hours" id="14:00">
+                <p class="time">2:00 P.M.</p>
+            </div>
+            <div class="hours" id="15:00">
+                <p class="time">3:00 P.M.</p>
+            </div>
+            <div class="hours" id="16:00">
+                <p class="time">4:00 P.M.</p>
+            </div>
+            <div class="hours" id="17:00">
+                <p class="time">5:00 P.M.</p>
+            </div>
+            <div class="hours" id="18:00">
+                <p class="time">6:00 P.M.</p>
+            </div>
+            <div class="hours" id="19:00">
+                <p class="time">7:00 P.M.</p>
+            </div>
+            <div class="hours" id="20:00">
+                <p class="time">8:00 P.M.</p>
+            </div>
+            <div class="hours" id="21:00">
+                <p class="time">9:00 P.M.</p>
+            </div>
+            <div class="hours" id="22:00">
+                <p class="time">10:00 P.M.</p>
+            </div>
+            <div class="hours" id="23:00">
+                <p class="time">11:00 P.M.</p>
+            </div>
+
+        </div>
+        
+        <div id = 'resultWindow'>
+           
+    </div>
+    <script src="scripts.js"></script>
+
+
+
+
+</body>
+</html>
