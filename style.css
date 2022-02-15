@@ -143,7 +143,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 15em;
+    height: 17em;
     padding: 1.5em;
 
 }
@@ -161,6 +161,7 @@ p {
     flex-direction: column;
     margin: 0px auto;
     justify-content: center;
+    align-items: center;
     height: 100%;
     width: 50%;
     padding: 1em;
@@ -168,19 +169,19 @@ p {
 }
 
 #avgTemp {
-    font-size: 2em;
+    font-size: 2.5em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 #lowTemp {
-    font-size: 1em;
+    font-size: 1.5em;
     background-color: blue;
     
 }
 
 #highTemp {
-    font-size: 1em;
+    font-size: 1.5em;
     background-color: red;
 }
 
@@ -198,8 +199,6 @@ p {
 
 .hours {
     min-width: 7em;
-
-    border: solid blue 1px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -222,23 +221,43 @@ p {
     #location {
         justify-self: center;
         flex-direction: row;
-        border: solid 2px blue;
     }
 
     #time {
         width: 40%;
         font-size: 1em;
         padding: 1em;
-        border: solid 2px red;
     }
 
+    #icon {
+        width: 15em;
+        height: auto;
+        border: solid 3px;
+    }
 
+    #lowTemp, #highTemp {
+        font-size: 2em;
+    }
 
+    #avgTemp {
+        font-size: 3em;
+    }
 
+    #temps {
+        padding: 2em;
+        align-items: center;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+    #temps {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
