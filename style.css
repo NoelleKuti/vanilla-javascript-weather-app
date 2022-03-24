@@ -20,10 +20,10 @@ header, #inputElement {
     height: 2em;
 }
 
-
 #citySearch {
     width: 50%;
 }
+
 #enterbtn {
     height: 2em;
     width: 75%;
@@ -77,8 +77,6 @@ header, #inputElement {
     height: 6em;
     text-align: center;
     font-size: 15px;
-    border: solid 2px white;
-    
 }
 
 #titles {
@@ -153,7 +151,6 @@ p {
     margin: 0 auto;
     justify-content: center;
     width: 50%;
-
 }
 
 #temps {
@@ -232,7 +229,6 @@ p {
     #icon {
         width: 15em;
         height: auto;
-        border: solid 3px;
     }
 
     #lowTemp, #highTemp {
