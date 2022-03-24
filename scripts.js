@@ -41,7 +41,7 @@ window.onload = function() {
 
 //globals 
 let key = 'key=b7bf7b0695b74998a88214335221401'
-let baseURL = 'http://api.weatherapi.com/v1'
+let baseURL = 'https://api.weatherapi.com/v1'
 let type = '/forecast.json?'
 let q = '&q='
 let days = '&days=3'
