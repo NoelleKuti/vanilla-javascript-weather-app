@@ -54,6 +54,7 @@ header, #inputElement {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 
 }
 
@@ -107,7 +108,8 @@ p {
 }
 
 #container {
-    width: 90vw;
+    width: 70%;
+    max-width: 30rem;
     border-radius: 25px;
     background-color: #018abe;
     margin: 1em auto;
@@ -245,15 +247,3 @@ p {
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    #temps {
-        flex-direction: row;
-        align-items: center;
-    }
-
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
