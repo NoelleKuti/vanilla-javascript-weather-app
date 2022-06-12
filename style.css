@@ -59,18 +59,14 @@ header, #inputElement {
 }
 
 .days {
-        /* object-fit: fill; */ 
-        width: 80%;
-        padding: 1rem;
-        text-align: center;
-        margin: 0px auto;
-        background-color: #d6e8ee;
-        
-
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+    margin: 0px auto;
+    background-color: #d6e8ee;
 }
 
 #welcomeMessage {
-
     width: 100%;
     margin-top: 1em;
     margin-bottom: 0 auto;
@@ -99,6 +95,9 @@ h1 {
     margin: 0 auto;
 }
 
+button {
+    cursor: pointer;
+}
 
 p {
     text-align: center;
